@@ -1,33 +1,41 @@
 // src/pages/About.jsx
 
+import React from "react";
 import "./css/about.css";
+
+// Importe as fotos dos autores
+import hyagoColaresPhoto from "./authors/hyagoColares.jpeg";
+import davidAdonaiPhoto from "./authors/davidAdonai.jpeg";
+import lucasCassianoPhoto from "./authors/lucasCassiano.jpeg";
+import renatoSilvaPhoto from "./authors/renatoSilva.jpeg";
 
 const About = () => {
   const authors = [
     {
       name: "Hyago Colares",
-      photoLink: "", // link da foto do autor 1
-      professionalInfo: "Estudante de SI e estagiário da UOL Dev WEB|AWS.",
+      photo: hyagoColaresPhoto,
+      professionalInfo: "Estudante de SI e estagiário da AWS.",
     },
     {
       name: "David Adonai",
-      photoLink: "", // link da foto do autor 2
+      photo: davidAdonaiPhoto,
       professionalInfo:
-        "Estudante de SI, membro da SBC e estagiário na PortalAgro. ",
+        "Estudante de SI, membro da SBC e estagiário na PortalAgro.",
     },
     {
       name: "Lucas Cassiano",
-      photoLink: "", // link da foto do autor 3
+      photo: lucasCassianoPhoto,
       professionalInfo: "Estudante de SI e membro do NPCA.",
     },
     {
       name: "Renato Silva",
-      photoLink: "", // link da foto do autor 4
+      photo: renatoSilvaPhoto,
       professionalInfo: "Estudante de SI e CTO da oBoticário.",
     },
   ];
+
   return (
-    <div>
+    <div className="about-container">
       <h1>Grupo Penumbra</h1>
       <p>
         Este projeto é dedicado a disciplina de Laboratório de Produção de
@@ -39,13 +47,19 @@ const About = () => {
       </p>
 
       <h2>Autores:</h2>
-      {authors.map((author, index) => (
-        <div key={index}>
-          <h3>{author.name}</h3>
-          <img src={author.photoLink} alt={`Foto de ${author.name}`} />
-          <p>{author.professionalInfo}</p>
-        </div>
-      ))}
+      <div className="authors-container">
+        {authors.map((author, index) => (
+          <div className="author-card" key={index}>
+            <h3>{author.name}</h3>
+            <img
+              className="author-photo"
+              src={author.photo}
+              alt={`Foto de ${author.name}`}
+            />
+            <p className="professional-info">{author.professionalInfo}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
