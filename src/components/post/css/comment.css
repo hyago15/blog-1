@@ -1,7 +1,7 @@
 /* src/components/post/Comment.jsx */
 
 .comment {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0 auto;
   overflow: hidden;
   color: #fff;
@@ -24,20 +24,28 @@
   flex: 1;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #2b2b2b;
   border-radius: 5px;
-  background-color: #3f3f3f;
+  background-color: #666666;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .comment textarea {
   height: 100px;
-  min-width: 100%;
+  min-width: 90%;
   resize: none;
 }
 
 .comment button {
   padding: 10px 20px;
-  background-color: #FF4500;
+  background-color: #ff4500;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -45,7 +53,7 @@
 }
 
 .comment button:hover {
-  background-color: #FF6347;
+  background-color: #ff6347;
 }
 
 .comment-list {
@@ -53,7 +61,7 @@
 }
 
 .single-comment {
-  background-color: #f0f0f0;
+  background-color: #aaa7;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -65,7 +73,7 @@
 
 .comment-info {
   font-size: 12px !important;
-  color: #888;
+  color: #9b9b9b;
 }
 
 .comment-container {

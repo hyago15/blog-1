@@ -1,24 +1,24 @@
 // src/components/post/Comment.jsx
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./css/comment.css";
 
 const Comment = () => {
   const [comments, setComments] = useState([]);
-  const [name, setName] = useState('');
-  const [commentText, setCommentText] = useState('');
+  const [name, setName] = useState("");
+  const [commentText, setCommentText] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (commentText.trim() !== '') {
+    if (commentText.trim() !== "") {
       const newComment = {
-        name: name || 'Usuário Anônimo',
+        name: name || "Usuário Anônimo",
         text: commentText,
-        date: new Date().toLocaleString()
+        date: new Date().toLocaleString(),
       };
-      setComments(prevComments => [...prevComments, newComment]);
-      setName('');
-      setCommentText('');
+      setComments((prevComments) => [...prevComments, newComment]);
+      setName("");
+      setCommentText("");
     }
   };
 
@@ -44,7 +44,7 @@ const Comment = () => {
           <div key={index} className="single-comment">
             <p>{comment.text}</p>
             <p className="comment-info">
-              Enviado por: {comment.name} em {comment.date}
+              Enviado por: <strong>{comment.name}</strong> em {comment.date}
             </p>
           </div>
         ))}

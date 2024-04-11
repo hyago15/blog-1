@@ -1,62 +1,59 @@
 /* src/components/css/blogpost.css */
 
+.main-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-card h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .container {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  justify-content: center;
 }
 
-  .container-card h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .container {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .caracterCard {
-    background-color: #1d1d1d;
-    color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .caracterCard-img {
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  .caracterCard-img img {
-    width: 100%;
-    height: auto; 
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .caracterCard-img img:hover {
-    transform: scale(1.1);
-  }
-  
-  .caracterCard-content {
-    padding: 20px;
-  }
-  
-  .caracterCard-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .caracterCard-content p {
-    margin: 5px 0;
-  }
-  
+.caracterCard {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.caracterCard-img {
+  margin: 0;
+  overflow: hidden;
+}
+
+.caracterCard-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.caracterCard-img img:hover {
+  transform: scale(1.1);
+}
+
+.caracterCard-content {
+  padding: 20px;
+}
+
+.caracterCard-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.caracterCard-content p {
+  margin: 5px 0;
+}

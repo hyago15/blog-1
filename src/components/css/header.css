@@ -1,19 +1,22 @@
 /* src/components/css/header.css */
 
 .main-header {
-  background-color: #1f1f1f;
   color: #ffffff;
-  padding: 1rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .main-header h1 {
   font-size: 2rem;
-  margin: 0;
+  font-weight: 900;
+}
+
+.main-header h4 {
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 .header-logo {
-  margin: 1rem 0;
   padding: 0.5rem;
   background-color: #333;
   color: #fff;

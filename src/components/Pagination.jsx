@@ -5,9 +5,15 @@ import "./css/pagination.css";
 
 const Pagination = ({ prevPage, nextPage, currentPage }) => {
   return (
-    <div>
-      {currentPage > 1 && <button onClick={prevPage}>Previous Page</button>}
-      <button onClick={nextPage}>Next Page</button>
+    <div className="pagination">
+      {currentPage > 1 && (
+        <button className="btn-pagination-pp" onClick={prevPage}>
+          Previous Page
+        </button>
+      )}
+      <button className="btn-pagination-np" onClick={nextPage}>
+        Next Page
+      </button>
     </div>
   );
 };

@@ -57,7 +57,7 @@ const BlogPost = ({ page }) => {
   }
 
   return (
-    <div className="container-card" ref={containerRef}>
+    <div className="main-card" ref={containerRef}>
       <h1>Characters</h1>
       <ul className="container">
         {characters

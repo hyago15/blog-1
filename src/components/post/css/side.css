@@ -3,14 +3,14 @@
 .sidebar-right {
   width: 23.3%;
   background-color: #3f3f3f;
-  padding: 20px;
+  padding: 0 20px 0 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-right h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .sidebar-right ul {
@@ -28,7 +28,7 @@
 
 .post-card img {
   width: 100%;
-  max-width: 200px;
+  margin: 0;
   height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -36,14 +36,17 @@
 
 .post-content {
   padding: 10px;
+  color: #fff;
 }
 
 .post-content h3 {
   font-size: 16px;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
 .post-content p {
   font-size: 14px;
+  font-weight: 100;
   margin-bottom: 3px;
 }

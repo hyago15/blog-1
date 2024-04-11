@@ -1,0 +1,25 @@
+/* src/components/css/pagination.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.btn-pagination-pp,
+.btn-pagination-np {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pagination-pp:hover,
+.btn-pagination-np:hover {
+  background-color: #555;
+}
