@@ -4,10 +4,10 @@ import React from "react";
 import "./css/about.css";
 
 // Importe as fotos dos autores
-import hyagoColaresPhoto from "./authors/hyagoColares.jpeg";
-import davidAdonaiPhoto from "./authors/davidAdonai.jpeg";
-import lucasCassianoPhoto from "./authors/lucasCassiano.jpeg";
-import renatoSilvaPhoto from "./authors/renatoSilva.jpeg";
+import hyagoColaresPhoto from "https://github.com/hyago15/blog-1/blob/draft/cool-pine/src/pages/authors/hyagoColares.jpeg";
+import davidAdonaiPhoto from "https://github.com/hyago15/blog-1/blob/draft/cool-pine/src/pages/authors/davidAdonai.jpeg";
+import lucasCassianoPhoto from "https://github.com/hyago15/blog-1/blob/draft/cool-pine/src/pages/authors/lucasCassiano.jpeg";
+import renatoSilvaPhoto from "https://github.com/hyago15/blog-1/blob/draft/cool-pine/src/pages/authors/renatoSilva.jpeg";
 
 const About = () => {
   const authors = [
