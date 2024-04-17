@@ -12,7 +12,8 @@ const About = () => {
     {
       name: "Hyago Colares",
       photo: hyagoColaresPhoto,
-      professionalInfo: "Estudante de SI e estagiário da AWS.",
+      professionalInfo:
+        "Tec. Informatica. Estudante de SI e estagiário da COMPASS.UOL/AWS Dev FULL-STACK.",
     },
     {
       name: "David Adonai",
@@ -51,7 +52,7 @@ const About = () => {
             <h3>{author.name}</h3>
             <img
               className="author-photo"
-              src={author.photo}
+              src={`${author.photo}`}
               alt={`Foto de ${author.name}`}
             />
             <p className="professional-info">{author.professionalInfo}</p>
